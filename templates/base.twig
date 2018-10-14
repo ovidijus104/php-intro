@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Strict types</title>
+    <meta name="description" content="About strict type in php">
+    <meta name="author" content="Ovidijus">
+
+</head>
+
+<body>
+
+    <h1>Strict types</h1>
+    <hr />
+    {{ strict.prefixForName }}
+
+    <ul>
+    {% for people in strict.salaryWithCommision %}
+    <li>{{ people }}</li>
+        {% endfor %}
+    </ul>
+
+    <h1>Non strict types</h1>
+    <hr />
+    {{ non_strict.prefixForName }}
+    <br>
+
+    <ul>
+        {% for people in non_strict.salaryWithCommision %}
+            <li>{{ people }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

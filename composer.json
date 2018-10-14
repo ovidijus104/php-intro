@@ -1,0 +1,17 @@
+{
+    "name": "ovidi/strict",
+    "description": "PHP strict types",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ovidijus",
+            "email": "ovidijus104@gmail.com"
+        }
+    ],
+    "require": {
+        "twig/twig": "^2.0"
+    },
+    "autoload": {
+        "files": ["src/file1.php", "src/file2.php"]
+    }
+}
